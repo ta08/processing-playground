@@ -41,3 +41,8 @@ Execute [update_readme.sh](update_readme.sh) instead of updating manually.
 ### pie_chart/movie.gif
 
 ![pie_chart](pie_chart/movie.gif)
+
+### eclipse_mouse/movie.gif
+
+![eclipse_mouse](eclipse_mouse/movie.gif)
+
