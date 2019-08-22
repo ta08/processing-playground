@@ -46,3 +46,7 @@ Execute [update_readme.sh](update_readme.sh) instead of updating manually.
 
 ![eclipse_mouse](eclipse_mouse/movie.gif)
 
+### check_gif_size/movie.gif
+
+![check_gif_size](check_gif_size/movie.gif)
+
