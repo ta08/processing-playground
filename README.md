@@ -24,6 +24,14 @@ If you want to update this readme with links of generated gif files, you can run
 ./update_readme.sh
 ```
 
+### note 
+
+> We don't yet support any of the Java 7 and Java 8 language features. Please help us fix this. Advanced users (loosely defined as “people who know that these features exist”) can always make use of Java 7 and 8 features from another IDE.
+https://github.com/processing/processing/wiki/Supported-Platforms#java-versions
+
+
+
+
 ## Gallary
 
 Order of arrival.
@@ -51,4 +59,8 @@ Execute [update_readme.sh](update_readme.sh) instead of updating manually.
 ### involute_lissajous/movie.gif
 
 ![involute_lissajous](involute_lissajous/movie.gif)
+
+### collision/movie.gif
+
+![collision](collision/movie.gif)
 
