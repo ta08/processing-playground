@@ -26,13 +26,15 @@ If you want to update this readme with links of generated gif files, you can run
 
 ## Gallary
 
+Order of arrival.
+
 Do Not Append texts manually from here.
 
 Execute [update_readme.sh](update_readme.sh) instead of updating manually.
 
-### rotate_line_end_txt/movie.gif
+### rotate_line/movie.gif
 
-![rotate_line_end_txt](rotate_line_end_txt/movie.gif)
+![rotate_line](rotate_line/movie.gif)
 
 ### flexible_rect/movie.gif
 
@@ -42,11 +44,11 @@ Execute [update_readme.sh](update_readme.sh) instead of updating manually.
 
 ![pie_chart](pie_chart/movie.gif)
 
-### eclipse_mouse/movie.gif
+### shaking_ellipse/movie.gif
 
-![eclipse_mouse](eclipse_mouse/movie.gif)
+![shaking_ellipse](shaking_ellipse/movie.gif)
 
-### check_gif_size/movie.gif
+### involute_lissajous/movie.gif
 
-![check_gif_size](check_gif_size/movie.gif)
+![involute_lissajous](involute_lissajous/movie.gif)
 
