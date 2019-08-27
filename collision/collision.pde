@@ -1,8 +1,4 @@
-import java.util.Collections;
-import java.util.List;
-// processing not support yet...
-
-Circle[] circles = new Circle[15];
+Circle[] circles = new Circle[20];
 
 void setup() {
   size(400, 400);
@@ -15,7 +11,7 @@ void draw() {
   background(255);
   for(Circle circle: circles){
       circle.changeStatusIfCollision(circles);
-      circle.drow();
+      circle.move();
   }
   recodeFrameUntil(400);
 }

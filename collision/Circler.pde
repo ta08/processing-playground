@@ -3,8 +3,8 @@ class Circle {
   float x;
   float y;
   float r;
-  float dv_x;
-  float dv_y;
+  float vx;
+  float vy;
   float r_color ;
   float g_color;
   float b_color;
@@ -20,15 +20,25 @@ class Circle {
     r_color = 0;
     g_color = random(255);
     b_color = random(255);
-    dv_x = random(RANDOM_LIMIT);
-    dv_y = random(RANDOM_LIMIT);
+    vx = random(RANDOM_LIMIT);
+    vy = random(RANDOM_LIMIT);
   }
 
-  void drow() {
-    dv_x = width < x || x < 0 ? dv_x * -1.0 : dv_x;
-    dv_y = height < y || y < 0 ? dv_y * -1.0 : dv_y;
-    x += dv_x ;
-    y += dv_y;
+  void move() {
+    if (width < x) {
+      vx = abs(vx) * -1.0;
+    } else if (x < 0) {
+      vx = abs(vx);
+    }
+
+    if (height < y) {
+      vy = abs(vy) * -1.0;
+    } else if (y < 0) {
+      vy = abs(vy);
+    }
+
+    x += vx ;
+    y += vy;
     fill(r_color, g_color, b_color);
     circle(x, y, r * 2);
     fill(255, 0, 0);
@@ -39,8 +49,9 @@ class Circle {
   void changeStatusIfCollision(Circle[] circles) {
     for (Circle circle : circles) {
       if (this.detectCollision(circle)) {
-        this.dv_x = random(RANDOM_LIMIT) * 2 - RANDOM_LIMIT;
-        this.dv_y = random(RANDOM_LIMIT) * 2 - RANDOM_LIMIT;
+        this.vx *= -1; 
+        this.vy *= -1;
+
         this.g_color = random(255);
         this.b_color = random(255);
       };
